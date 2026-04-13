@@ -3,7 +3,7 @@ export default async function handler(req, res) {
 
     // 📥 ดึง database จาก GitHub
     const db = await fetch(
-        "https://raw.githubusercontent.com/user/repo/main/db.json"
+        "https://raw.githubusercontent.com/rickhub940-ai/Whilst-/refs/heads/main/db.json"
     ).then(r => r.json());
 
     // ❌ key ไม่มี
