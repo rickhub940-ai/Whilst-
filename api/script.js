@@ -24,7 +24,7 @@ export default async function handler(req, res) {
     delete tokens[token];
 
     // 📦 ดึง script จาก GitHub
-    const scriptUrl = `https://raw.githubusercontent.com/user/repo/main/scripts/${data.script}.lua`;
+    const scriptUrl = `https://raw.githubusercontent.com/rickhub940-ai/Whilst-/main/scripts/${data.script}.lua`;
 
     const script = await fetch(scriptUrl).then(r => r.text());
 
